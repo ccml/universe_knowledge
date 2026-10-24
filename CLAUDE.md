@@ -8,6 +8,7 @@ Domaines couverts :
 - **Système solaire** : Soleil, planètes, lunes, astéroïdes, comètes
 - **Étoiles et galaxies** : formation et vie des étoiles, nébuleuses, trous noirs, galaxies, amas
 - **Cosmologie** : Big Bang, expansion, matière noire, énergie sombre, structure à grande échelle
+- **Du Big Bang à nos jours** : frise des grandes étapes (cosmos, Terre, vie, humanité) et deux synthèses sur la vie et l'aventure humaine. Les étapes cosmiques sont traitées dans les trois domaines ci-dessus ; ce domaine-ci les relie et reste volontairement condensé pour la vie et l'humanité.
 
 ## Langue et ton
 
@@ -63,11 +64,12 @@ contenu/
   ordre: 1                    # facultatif : position dans le domaine
   brouillon: true             # facultatif : article exclu du site
   ```
-- **Front matter d'un domaine** (`index.md`) : `titre`, `description`, `symbole` (`soleil`, `etoile` ou `spirale`), `ordre`.
+- **Front matter d'un domaine** (`index.md`) : `titre`, `description`, `symbole` (`soleil`, `etoile`, `spirale` ou `sablier`), `ordre`.
 - **Glossaire** : liste `termes` de `{ terme, definition, id? }` dans `contenu/glossaire.md`. L'`id` (ancre) est déduit du terme s'il est absent.
 - **Syntaxe maison** :
   - `:::a-retenir` … `:::` — encadré « À retenir ».
   - `:::encadre[Le saviez-vous ?]` … `:::` — encadré titré.
+  - `:::frise` … `:::` — frise chronologique : une liste dont chaque élément commence par la date en gras (`- **Il y a 4,6 milliards d'années**`), suivie à la ligne d'un lien et d'une phrase.
   - `:terme[années-lumière]{#annee-lumiere}` — mot relié au glossaire (définition en info-bulle). Sans `{#…}`, l'id est déduit du libellé.
   - `::composant{nom=echelle-planetes}` — composant interactif Angular.
   - Liens internes en chemin absolu : `[le Big Bang](/cosmologie/le-big-bang)`. Liens externes en `https://`.

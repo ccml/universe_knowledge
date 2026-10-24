@@ -1,13 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
-import {
-  BANDES,
-  ERES,
-  EVENEMENTS,
-  Evenement,
-  dateCosmique,
-  positionDans,
-} from './evenements';
+import { BANDES, ERES, EVENEMENTS, Evenement, dateCosmique, positionDans } from './evenements';
 
 /** Ramène l'histoire de l'univers à une seule année, avec deux zooms sur le 31 décembre. */
 @Component({

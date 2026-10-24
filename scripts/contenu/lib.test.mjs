@@ -109,7 +109,10 @@ describe('convertirMarkdown', () => {
   });
 
   it('transforme :::frise en bloc du texte, sans titre', () => {
-    const r = convertirMarkdown(':::frise\n- **Il y a 4,6 milliards d’années** Le Soleil\n:::', options);
+    const r = convertirMarkdown(
+      ':::frise\n- **Il y a 4,6 milliards d’années** Le Soleil\n:::',
+      options,
+    );
     expect(r.erreurs).toEqual([]);
     expect(r.html).toMatch(/^<div class="frise"><ul>/);
   });

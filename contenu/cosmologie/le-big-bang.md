@@ -3,7 +3,7 @@ titre: Le Big Bang, l'histoire d'une expansion
 description: Le Big Bang n'est pas une explosion dans l'espace mais le début de l'expansion de l'univers. Ce que l'on sait, et ce qui reste à comprendre.
 niveau: decouverte
 mise_a_jour: 2026-10-24
-mots_cles: [Big Bang, expansion, rayonnement fossile, âge de l'univers, Lemaître, Hubble]
+mots_cles: [Big Bang, expansion, inflation, rayonnement fossile, âge de l'univers, Lemaître, Hubble]
 ordre: 1
 ---
 
@@ -30,8 +30,22 @@ En combinant de nombreuses observations, les cosmologistes estiment que cette ex
 Le Big Bang n’est pas qu’une idée séduisante : plusieurs observations indépendantes le confirment.
 
 - **L'éloignement des galaxies**, mesuré depuis Hubble avec une précision toujours plus grande.
-- **Le rayonnement fossile.** Environ 380 000 ans après le Big Bang, l'univers est devenu assez froid pour laisser filer la lumière. Cette lumière très ancienne nous parvient encore aujourd'hui de toutes les directions du ciel, refroidie à environ −270 °C : c'est le :terme[rayonnement fossile]{#rayonnement-fossile}. Il a été découvert par hasard en 1965 par Arno Penzias et Robert Wilson.
-- **L'abondance des éléments légers.** La théorie prédit qu'environ trois quarts de la matière ordinaire devaient être de l'hydrogène et un quart de l'hélium. C'est exactement ce que l'on observe.
+- **Le rayonnement fossile.** Environ 380 000 ans après le Big Bang, l'univers est devenu assez froid pour laisser filer la lumière. Cette lumière très ancienne nous parvient encore aujourd'hui de toutes les directions du ciel, refroidie à environ −270 °C : c'est le :terme[rayonnement fossile]{#rayonnement-fossile}. Il a été découvert par hasard en 1965 par Arno Penzias et Robert Wilson. Nous lui consacrons [un article à part](/cosmologie/le-rayonnement-fossile).
+- **L'abondance des éléments légers.** La théorie prédit qu'environ trois quarts de la matière ordinaire devaient être de l'hydrogène et un quart de l'hélium, fabriqués [dans les premières minutes](/cosmologie/les-premiers-noyaux). C'est exactement ce que l'on observe.
+
+## L'inflation, un démarrage fulgurant
+
+Dans sa toute première fraction de seconde, l'univers aurait connu une phase d'expansion extraordinairement rapide : l':terme[inflation cosmique]{#inflation}. En une durée bien plus courte qu'un milliardième de milliardième de milliardième de seconde, les distances auraient été multipliées par un facteur colossal, au moins cent millions de milliards de milliards. C'est un peu comme si une bactérie devenait plus grande qu'une galaxie en un clin d'œil.
+
+Rien ne dépasse pourtant la vitesse de la lumière : aucun objet ne se déplace *dans* l'espace, c'est l'espace lui-même qui s'étire.
+
+Proposée au début des années 1980 par Alan Guth, Andreï Linde et d'autres, l'inflation résout trois énigmes :
+
+- **L'uniformité.** Le rayonnement fossile a presque la même température dans tout le ciel, même entre des régions trop éloignées pour avoir jamais échangé de chaleur. Avant l'inflation, elles étaient voisines.
+- **La platitude.** À grande échelle, la géométrie de l'univers est remarquablement « plate ». L'inflation l'a aplanie, comme la Terre paraît plate à l'échelle d'un jardin.
+- **L'origine des galaxies.** De minuscules fluctuations, étirées à l'échelle cosmique, sont devenues les germes des futures galaxies.
+
+L'inflation est aujourd'hui le scénario privilégié par la plupart des cosmologistes, mais elle n'est **pas encore prouvée directement**. On cherche toujours sa signature la plus nette : des ondes gravitationnelles venues de cette époque, qui auraient laissé une empreinte dans le rayonnement fossile.
 
 ## Ce que l'on ne sait pas encore
 
@@ -47,7 +61,8 @@ Le Big Bang décrit très bien l'évolution de l'univers depuis ses premiers ins
 - Le Big Bang n'est pas une explosion dans l'espace : c'est le début de l'expansion de l'espace lui-même.
 - Cette expansion a commencé il y a environ 13,8 milliards d'années.
 - Trois observations majeures le confirment : l'éloignement des galaxies, le rayonnement fossile et l'abondance de l'hydrogène et de l'hélium.
+- L'inflation, une expansion fulgurante dans la première fraction de seconde, est très probable mais pas encore prouvée.
 - La nature de la matière noire et de l'énergie sombre, qui forment environ 95 % de l'univers, reste inconnue.
 :::
 
-Pour aller plus loin : la mission [Planck de l'ESA](https://www.esa.int/Science_Exploration/Space_Science/Planck) a cartographié le rayonnement fossile avec une précision inégalée.
+Pour aller plus loin : suivez [toute l'histoire de l'univers, du Big Bang à nos jours](/du-big-bang-a-nos-jours/la-frise-du-temps). La mission [Planck de l'ESA](https://www.esa.int/Science_Exploration/Space_Science/Planck) a cartographié le rayonnement fossile avec une précision inégalée.
