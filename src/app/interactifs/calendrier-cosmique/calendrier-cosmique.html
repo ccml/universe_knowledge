@@ -1,0 +1,71 @@
+<figure class="calendrier">
+  @for (groupe of eres; track groupe.ere) {
+    <div
+      class="commandes"
+      role="group"
+      [attr.aria-label]="'calendrier.eres.' + groupe.ere | translate"
+    >
+      <span class="ere" aria-hidden="true">{{ 'calendrier.eres.' + groupe.ere | translate }}</span>
+      @for (e of groupe.evenements; track e.id) {
+        <button
+          type="button"
+          class="pastille"
+          [class.active]="choisi().id === e.id"
+          [attr.aria-pressed]="choisi().id === e.id"
+          (click)="choisi.set(e)"
+        >
+          {{ 'evenements.' + e.id + '.titre' | translate }}
+        </button>
+      }
+    </div>
+  }
+
+  <div class="resultat" aria-live="polite">
+    <p class="resultat-date">{{ date(choisi()) }}</p>
+    <p class="resultat-texte">
+      {{ 'evenements.' + choisi().id + '.titre' | translate }}
+      <span class="quand">· {{ 'evenements.' + choisi().id + '.quand' | translate }}</span>
+    </p>
+  </div>
+
+  @for (b of bandes(); track b.id) {
+    <div class="bande" [class.zoom]="b.id !== 'annee'" aria-hidden="true">
+      <p class="bande-titre">{{ 'calendrier.bandes.' + b.id | translate }}</p>
+      <div class="barre">
+        @for (r of b.reperes; track r.id) {
+          <span class="repere" [class.choisi]="r.id === choisi().id" [style.left]="r.gauche"></span>
+        }
+      </div>
+      <div class="graduations">
+        @for (g of b.graduations; track $index) {
+          <span [style.left]="g.position * 100 + '%'">{{ g.libelle }}</span>
+        }
+      </div>
+    </div>
+  }
+
+  <figcaption>
+    <p>{{ 'calendrier.legende' | translate }}</p>
+    <details>
+      <summary>{{ 'calendrier.toutesLesDates' | translate }}</summary>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">{{ 'calendrier.etape' | translate }}</th>
+            <th scope="col">{{ 'calendrier.quand' | translate }}</th>
+            <th scope="col">{{ 'calendrier.dateCalendrier' | translate }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (e of evenements; track e.id) {
+            <tr>
+              <th scope="row">{{ 'evenements.' + e.id + '.titre' | translate }}</th>
+              <td>{{ 'evenements.' + e.id + '.quand' | translate }}</td>
+              <td>{{ date(e) }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </details>
+  </figcaption>
+</figure>

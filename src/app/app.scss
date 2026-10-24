@@ -1,0 +1,121 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  outline: none;
+}
+
+.evitement {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 10;
+  padding: 0.5rem 1rem;
+  background: var(--or);
+  color: var(--nuit);
+
+  &:focus {
+    top: 1rem;
+  }
+}
+
+.bandeau {
+  border-bottom: 1px solid var(--trait);
+}
+
+.bandeau-interieur {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  padding-block: 1rem;
+}
+
+.marque {
+  font-family: var(--police-titre);
+  font-size: clamp(1.25rem, 4.5vw, 1.5rem);
+  font-weight: 600;
+  color: var(--lumiere);
+  text-decoration: none;
+}
+
+.bascule-menu {
+  padding: 0.3rem 0.9rem;
+  border: 1px solid var(--trait);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--lumiere);
+  font: inherit;
+
+  @media (min-width: 900px) {
+    display: none;
+  }
+}
+
+.navigation {
+  flex-basis: 100%;
+
+  @media (min-width: 900px) {
+    // Toujours visible sur grand écran, quel que soit l'état du menu mobile.
+    display: block !important;
+    flex-basis: auto;
+    height: auto !important;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem 1.5rem;
+    margin: 0;
+    padding: 0.5rem 0 0;
+    list-style: none;
+
+    @media (min-width: 900px) {
+      flex-direction: row;
+      padding: 0;
+    }
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.35rem 0;
+    color: var(--brume);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+
+    &:hover,
+    &.actif {
+      color: var(--lumiere);
+    }
+
+    &.actif {
+      border-bottom-color: var(--or);
+    }
+  }
+}
+
+.pied {
+  margin-top: 4rem;
+  padding-block: 2rem;
+  border-top: 1px solid var(--trait);
+  color: var(--brume);
+  font-size: 0.9rem;
+
+  p {
+    max-width: var(--mesure);
+  }
+}
+
+.pied-bas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin: 0;
+}

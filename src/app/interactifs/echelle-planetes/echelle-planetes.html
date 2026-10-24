@@ -1,0 +1,96 @@
+<figure class="echelle">
+  <div class="commandes" role="group" [attr.aria-label]="'echelle.groupe' | translate">
+    @for (p of planetes; track p.id) {
+      <button
+        type="button"
+        class="pastille"
+        [class.active]="choisies().has(p.id)"
+        [attr.aria-pressed]="choisies().has(p.id)"
+        (click)="basculer(p.id)"
+      >
+        <span class="point" [style.background]="p.couleur"></span>{{ 'astres.' + p.id | translate }}
+      </button>
+    }
+    @if (choisies().size < planetes.length) {
+      <button type="button" class="lien-bouton" (click)="toutes()">
+        {{ 'echelle.toutAfficher' | translate }}
+      </button>
+    }
+  </div>
+
+  <label class="soleil-option">
+    <input
+      type="checkbox"
+      [checked]="avecSoleil()"
+      (change)="avecSoleil.set($any($event.target).checked)"
+    />
+    {{ 'echelle.soleil' | translate }}
+  </label>
+
+  <div class="defilement" tabindex="0">
+    <svg
+      [attr.viewBox]="'0 0 ' + largeur + ' ' + hauteur"
+      role="img"
+      [attr.aria-label]="description()"
+      preserveAspectRatio="xMidYMid meet"
+    >
+      @if (disposition().soleil; as s) {
+        <defs>
+          <radialGradient id="echelle-soleil" cx="1" cy="0.5" r="1">
+            <stop offset="0" stop-color="#fbe3a0" />
+            <stop offset="1" stop-color="#e8a33d" />
+          </radialGradient>
+        </defs>
+        <circle [attr.cx]="s.cx" [attr.cy]="centreY" [attr.r]="s.r" fill="url(#echelle-soleil)" />
+      }
+      <line x1="0" [attr.x2]="largeur" [attr.y1]="centreY" [attr.y2]="centreY" class="axe" />
+      @for (c of disposition().cercles; track c.astre.id) {
+        <circle [attr.cx]="c.cx" [attr.cy]="centreY" [attr.r]="c.r" [attr.fill]="c.astre.couleur" />
+      }
+      @for (e of etiquettes(); track e.id) {
+        <text [attr.x]="e.x" [attr.y]="e.y" text-anchor="middle">
+          {{ 'astres.' + e.id | translate }}
+        </text>
+      }
+    </svg>
+  </div>
+
+  <figcaption>
+    <table>
+      <caption>
+        {{
+          'echelle.legende' | translate
+        }}
+        @if (disposition().agrandis.length) {
+          {{ 'echelle.agrandis' | translate }}
+        }
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">{{ 'echelle.astre' | translate }}</th>
+          <th scope="col">{{ 'echelle.diametre' | translate }}</th>
+          <th scope="col">{{ 'echelle.rapport' | translate }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        @if (avecSoleil()) {
+          <tr>
+            <th scope="row">{{ 'astres.soleil' | translate }}</th>
+            <td>{{ soleil.rayonKm * 2 | number: '1.0-0' }} km</td>
+            <td>× {{ rapportTerre(soleil) | number: '1.0-0' }}</td>
+          </tr>
+        }
+        @for (p of selection(); track p.id) {
+          <tr>
+            <th scope="row">
+              <span class="point" [style.background]="p.couleur"></span
+              >{{ 'astres.' + p.id | translate }}
+            </th>
+            <td>{{ p.rayonKm * 2 | number: '1.0-0' }} km</td>
+            <td>× {{ rapportTerre(p) | number: '1.0-2' }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </figcaption>
+</figure>

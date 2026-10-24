@@ -1,0 +1,54 @@
+<a class="evitement" href="#contenu">{{ 'nav.evitement' | translate }}</a>
+
+<header class="bandeau">
+  <div class="conteneur bandeau-interieur">
+    <a class="marque" routerLink="/">{{ nomSite }}</a>
+
+    <button
+      type="button"
+      class="bascule-menu"
+      [attr.aria-expanded]="!menuFerme()"
+      aria-controls="navigation"
+      (click)="menuFerme.set(!menuFerme())"
+    >
+      {{ 'nav.menu' | translate }}
+    </button>
+
+    <nav
+      id="navigation"
+      class="navigation"
+      [attr.aria-label]="'nav.principale' | translate"
+      [ngbCollapse]="menuFerme()"
+      (ngbCollapseChange)="menuFerme.set($event)"
+    >
+      <ul>
+        @for (d of domaines; track d.slug) {
+          <li>
+            <a [routerLink]="['/', d.slug]" routerLinkActive="actif" ariaCurrentWhenActive="page">
+              <app-symbole [nom]="d.symbole" />{{ d.titre }}
+            </a>
+          </li>
+        }
+        <li>
+          <a routerLink="/glossaire" routerLinkActive="actif" ariaCurrentWhenActive="page">{{
+            'nav.glossaire' | translate
+          }}</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu" tabindex="-1">
+  <router-outlet />
+</main>
+
+<footer class="pied">
+  <div class="conteneur">
+    <p>{{ 'pied.texte' | translate }}</p>
+    <p class="pied-bas">
+      <span>© {{ annee }} {{ nomSite }}</span>
+      <a href="/sitemap.xml">{{ 'pied.sitemap' | translate }}</a>
+    </p>
+  </div>
+</footer>

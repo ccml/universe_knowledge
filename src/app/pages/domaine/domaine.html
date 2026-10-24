@@ -1,0 +1,31 @@
+<div class="conteneur page">
+  <p class="retour">
+    <a routerLink="/">{{ 'domaine.tousLesDomaines' | translate }}</a>
+  </p>
+
+  <header class="entete">
+    <app-symbole [nom]="fiche().symbole" class="entete-symbole" />
+    <h1>{{ fiche().titre }}</h1>
+  </header>
+
+  <app-contenu-html class="intro" [html]="fiche().introHtml" />
+
+  <section aria-labelledby="titre-articles">
+    <h2 id="titre-articles">{{ 'domaine.articles' | translate }}</h2>
+    @if (articles().length) {
+      <ul class="liste-articles">
+        @for (a of articles(); track a.slug) {
+          <li>
+            <h3>
+              <a [routerLink]="['/', a.domaine, a.slug]">{{ a.titre }}</a>
+            </h3>
+            <p>{{ a.description }}</p>
+            <app-meta-article [article]="a" />
+          </li>
+        }
+      </ul>
+    } @else {
+      <p class="vide">{{ 'domaine.aucunArticle' | translate }}</p>
+    }
+  </section>
+</div>

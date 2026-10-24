@@ -1,0 +1,35 @@
+<section class="ouverture">
+  <app-ciel />
+  <div class="conteneur ouverture-texte">
+    <h1>{{ seo.nomSite }}</h1>
+    <p class="accroche">{{ 'site.accroche' | translate }}</p>
+  </div>
+</section>
+
+<section class="conteneur index" aria-labelledby="titre-domaines">
+  <h2 id="titre-domaines" class="visually-hidden">{{ 'accueil.domaines' | translate }}</h2>
+  @for (d of contenu.domaines; track d.slug) {
+    <article class="domaine">
+      <app-symbole [nom]="d.symbole" class="domaine-symbole" />
+      <div class="domaine-texte">
+        <h3>
+          <a [routerLink]="['/', d.slug]">{{ d.titre }}</a>
+        </h3>
+        <p>{{ d.description }}</p>
+      </div>
+      <ul class="domaine-articles">
+        @for (a of contenu.articlesDe(d.slug); track a.slug) {
+          <li>
+            <a [routerLink]="['/', d.slug, a.slug]">{{ a.titre }}</a>
+          </li>
+        } @empty {
+          <li class="vide">{{ 'accueil.aucunArticle' | translate }}</li>
+        }
+      </ul>
+    </article>
+  }
+
+  <p class="vers-glossaire">
+    <a routerLink="/glossaire">{{ 'accueil.glossaire' | translate }}</a>
+  </p>
+</section>

@@ -1,0 +1,123 @@
+.echelle {
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 1px solid var(--trait);
+  border-radius: 6px;
+  background: var(--nuit-2);
+}
+
+.commandes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.pastille {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.7rem;
+  border: 1px solid var(--trait);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--brume);
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+
+  &.active {
+    border-color: var(--or);
+    color: var(--lumiere);
+  }
+
+  &:not(.active) .point {
+    opacity: 0.35;
+  }
+}
+
+.lien-bouton {
+  border: 0;
+  background: none;
+  color: var(--brume);
+  font: inherit;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.point {
+  display: inline-block;
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  flex: none;
+}
+
+.soleil-option {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+}
+
+// Sur petit écran, le schéma garde une taille lisible et défile horizontalement.
+.defilement {
+  margin: 1rem 0 0.5rem;
+  overflow-x: auto;
+}
+
+svg {
+  display: block;
+  width: 100%;
+  min-width: 640px;
+  height: auto;
+
+  text {
+    fill: var(--brume);
+    font-size: 17px;
+    font-family: var(--police-texte);
+  }
+}
+
+.axe {
+  stroke: var(--trait);
+  stroke-dasharray: 3 6;
+}
+
+table {
+  width: 100%;
+  font-size: 0.9rem;
+  border-collapse: collapse;
+
+  caption {
+    caption-side: bottom;
+    padding-top: 0.6rem;
+    color: var(--brume);
+    font-size: 0.85rem;
+  }
+
+  th,
+  td {
+    padding: 0.3rem 0.5rem 0.3rem 0;
+    border-bottom: 1px solid var(--trait);
+    text-align: left;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  thead th {
+    color: var(--brume);
+    font-weight: normal;
+    white-space: normal;
+  }
+
+  tbody th {
+    font-weight: normal;
+
+    .point {
+      margin-right: 0.5rem;
+    }
+  }
+}

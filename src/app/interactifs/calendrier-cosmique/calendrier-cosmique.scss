@@ -1,0 +1,171 @@
+.calendrier {
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 1px solid var(--trait);
+  border-radius: 6px;
+  background: var(--nuit-2);
+}
+
+.commandes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+
+  & + & {
+    margin-top: 0.6rem;
+  }
+}
+
+.ere {
+  min-width: 5.5rem;
+  color: var(--brume);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.pastille {
+  padding: 0.2rem 0.7rem;
+  border: 1px solid var(--trait);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--brume);
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+
+  &.active {
+    border-color: var(--or);
+    color: var(--lumiere);
+  }
+}
+
+.resultat {
+  margin: 1.25rem 0 0.5rem;
+
+  p {
+    margin: 0;
+  }
+}
+
+.resultat-date {
+  color: var(--or);
+  font-family: var(--police-titre);
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.resultat-texte {
+  font-size: 0.95rem;
+
+  .quand {
+    color: var(--brume);
+  }
+}
+
+.bande {
+  margin-top: 1rem;
+
+  // Les zooms sont reliés à la bande précédente par un trait discret.
+  &.zoom {
+    padding-left: 0.75rem;
+    border-left: 1px dashed var(--trait);
+  }
+}
+
+.bande-titre {
+  margin: 0 0 0.3rem;
+  color: var(--brume);
+  font-size: 0.85rem;
+}
+
+.barre {
+  position: relative;
+  height: 1.1rem;
+  border: 1px solid var(--trait);
+  border-radius: 3px;
+}
+
+.repere {
+  position: absolute;
+  top: 50%;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--brume);
+  opacity: 0.55;
+  transform: translate(-50%, -50%);
+
+  &.choisi {
+    z-index: 1;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: var(--or);
+    opacity: 1;
+    box-shadow: 0 0 0 3px var(--nuit-2);
+  }
+}
+
+.graduations {
+  position: relative;
+  height: 1.3rem;
+  color: var(--brume);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+
+  span {
+    position: absolute;
+    top: 0.2rem;
+    transform: translateX(-50%);
+    white-space: nowrap;
+
+    &:first-child {
+      transform: none;
+    }
+
+    &:last-child:not(:first-child) {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+figcaption {
+  margin-top: 1rem;
+  color: var(--brume);
+  font-size: 0.85rem;
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+summary {
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  margin-top: 0.5rem;
+  color: var(--lumiere);
+  font-size: 0.85rem;
+  border-collapse: collapse;
+
+  th,
+  td {
+    padding: 0.3rem 0.5rem 0.3rem 0;
+    border-bottom: 1px solid var(--trait);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  thead th {
+    color: var(--brume);
+    font-weight: normal;
+  }
+
+  tbody th {
+    font-weight: normal;
+  }
+}

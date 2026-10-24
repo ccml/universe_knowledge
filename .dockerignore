@@ -1,0 +1,11 @@
+node_modules
+dist
+.angular
+.git
+.vscode
+src/generated
+public/sitemap.xml
+public/contenu-images
+deploiement
+*.md
+!contenu/**/*.md

@@ -1,0 +1,93 @@
+:host {
+  display: block;
+}
+
+.retour a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.entete {
+  margin-bottom: 2.5rem;
+  max-width: var(--mesure);
+
+  h1 {
+    margin: 0 0 1rem;
+  }
+}
+
+.chapo {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--lumiere);
+}
+
+.sommaire {
+  max-width: var(--mesure);
+  margin-bottom: 2.5rem;
+  padding: 1rem 1.25rem;
+  border-left: 2px solid var(--or);
+  background: var(--nuit-2);
+
+  ol {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+
+  li {
+    padding: 0.15rem 0;
+  }
+}
+
+.sommaire-titre {
+  margin: 0 0 0.5rem;
+  font-family: var(--police-titre);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.chargement,
+.erreur {
+  color: var(--brume);
+}
+
+.voisins {
+  display: grid;
+  gap: 1rem;
+  max-width: var(--mesure);
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--trait);
+
+  @media (min-width: 700px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.voisin {
+  display: block;
+  font-family: var(--police-titre);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--lumiere);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--or);
+  }
+}
+
+.suivant {
+  text-align: right;
+  grid-column: -2;
+}
+
+.voisin-libelle {
+  display: block;
+  font-family: var(--police-texte);
+  font-size: 0.85rem;
+  font-weight: normal;
+  color: var(--brume);
+}

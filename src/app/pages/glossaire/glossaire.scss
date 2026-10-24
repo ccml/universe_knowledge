@@ -1,0 +1,63 @@
+.intro {
+  max-width: var(--mesure);
+}
+
+.lettres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin: 2rem 0;
+  font-family: var(--police-titre);
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.groupe {
+  display: grid;
+  gap: 0 2rem;
+  max-width: 52rem;
+  padding-block: 1rem;
+  border-top: 1px solid var(--trait);
+
+  @media (min-width: 700px) {
+    grid-template-columns: 3rem 1fr;
+  }
+}
+
+.lettre {
+  margin: 0.5rem 0;
+  color: var(--or);
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+dl {
+  margin: 0;
+}
+
+.entree {
+  padding: 0.75rem 1rem;
+  margin-inline: -1rem;
+  border-left: 2px solid transparent;
+  scroll-margin-top: 1.5rem;
+
+  &.cible {
+    border-left-color: var(--or);
+    background: var(--nuit-2);
+  }
+}
+
+dt {
+  font-family: var(--police-titre);
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+
+dd {
+  margin: 0.25rem 0 0;
+  max-width: var(--mesure);
+}

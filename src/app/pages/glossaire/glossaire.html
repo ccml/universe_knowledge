@@ -1,0 +1,24 @@
+<div class="conteneur page">
+  <h1>{{ glossaire.titre }}</h1>
+  <app-contenu-html class="intro" [html]="glossaire.introHtml" />
+
+  <nav class="lettres" [attr.aria-label]="'glossaire.lettres' | translate">
+    @for (g of groupes; track g.lettre) {
+      <a [routerLink]="[]" [fragment]="'lettre-' + g.lettre">{{ g.lettre }}</a>
+    }
+  </nav>
+
+  @for (g of groupes; track g.lettre) {
+    <section class="groupe" [attr.aria-labelledby]="'lettre-' + g.lettre">
+      <h2 class="lettre" [id]="'lettre-' + g.lettre">{{ g.lettre }}</h2>
+      <dl>
+        @for (t of g.termes; track t.id) {
+          <div class="entree" [id]="t.id" [class.cible]="t.id === cible()">
+            <dt>{{ t.terme }}</dt>
+            <dd><app-contenu-html [html]="t.definitionHtml" /></dd>
+          </div>
+        }
+      </dl>
+    </section>
+  }
+</div>

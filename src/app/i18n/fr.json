@@ -1,0 +1,178 @@
+{
+  "site": {
+    "accroche": "Le système solaire, les étoiles et l’histoire du cosmos, expliqués simplement et avec exactitude."
+  },
+  "nav": {
+    "principale": "Navigation principale",
+    "glossaire": "Glossaire",
+    "menu": "Menu",
+    "accueil": "Accueil",
+    "evitement": "Aller au contenu"
+  },
+  "accueil": {
+    "explorer": "Explorer",
+    "domaines": "Les domaines",
+    "lire": "Lire l’article",
+    "aucunArticle": "Les premiers articles de ce domaine arrivent bientôt.",
+    "glossaire": "Un mot vous échappe ? Le glossaire explique les termes utilisés sur le site."
+  },
+  "domaine": {
+    "articles": "Les articles",
+    "aucunArticle": "Aucun article pour l’instant dans ce domaine. Revenez bientôt, ou explorez les autres domaines depuis l’accueil.",
+    "tousLesDomaines": "Tous les domaines"
+  },
+  "article": {
+    "niveau": {
+      "decouverte": "Niveau découverte",
+      "intermediaire": "Niveau intermédiaire"
+    },
+    "lecture": "{{minutes}} min de lecture",
+    "miseAJour": "Mis à jour le {{date}}",
+    "sommaire": "Dans cet article",
+    "precedent": "Article précédent",
+    "suivant": "Article suivant",
+    "chargement": "Chargement de l’article…",
+    "erreur": "Cet article n’a pas pu être chargé. Vérifiez votre connexion, puis rechargez la page."
+  },
+  "glossaire": {
+    "lettres": "Aller à la lettre"
+  },
+  "introuvable": {
+    "titre": "Cette page n’existe pas",
+    "texte": "L’adresse est peut-être mal saisie, ou la page a été déplacée. Repartez de l’accueil ou choisissez un domaine.",
+    "retour": "Revenir à l’accueil"
+  },
+  "pied": {
+    "texte": "Un site de vulgarisation scientifique. Les chiffres qui évoluent sont datés et vérifiés auprès de sources comme la NASA, l’ESA ou l’ESO.",
+    "sitemap": "Plan du site"
+  },
+  "echelle": {
+    "groupe": "Planètes affichées",
+    "toutAfficher": "Tout afficher",
+    "soleil": "Ajouter le Soleil à côté",
+    "legende": "Diamètres moyens. Saturne est représentée sans ses anneaux.",
+    "agrandis": "Les plus petits astres sont grossis pour rester visibles.",
+    "astre": "Astre",
+    "diametre": "Diamètre",
+    "rapport": "Par rapport à la Terre",
+    "description": "{{noms}}, dessinés à la même échelle.",
+    "descriptionSoleil": "Le bord du Soleil, puis {{noms}}, dessinés à la même échelle.",
+    "aucune": "Aucune planète sélectionnée."
+  },
+  "astres": {
+    "soleil": "Soleil",
+    "mercure": "Mercure",
+    "venus": "Vénus",
+    "terre": "Terre",
+    "mars": "Mars",
+    "jupiter": "Jupiter",
+    "saturne": "Saturne",
+    "uranus": "Uranus",
+    "neptune": "Neptune"
+  },
+  "calendrier": {
+    "eres": {
+      "cosmos": "Cosmos",
+      "vie": "Vie",
+      "humanite": "Humanité"
+    },
+    "bandes": {
+      "annee": "L’année entière",
+      "jour": "Zoom sur le 31 décembre",
+      "minute": "Zoom sur la dernière minute de l’année"
+    },
+    "mois": [
+      "janvier",
+      "février",
+      "mars",
+      "avril",
+      "mai",
+      "juin",
+      "juillet",
+      "août",
+      "septembre",
+      "octobre",
+      "novembre",
+      "décembre"
+    ],
+    "date": "{{jour}} {{mois}}",
+    "dateHeure": "{{jour}} {{mois}}, {{heure}} h {{minute}}",
+    "dateSeconde": "{{jour}} {{mois}}, {{heure}} h {{minute}} min {{seconde}} s",
+    "dateFin": "31 décembre, minuit",
+    "legende": "Les 13,8 milliards d’années de l’univers ramenées à une année de 365 jours : un jour du calendrier vaut environ 38 millions d’années, une seconde environ 440 ans. Les dates de départ sont approximatives.",
+    "toutesLesDates": "Voir toutes les dates",
+    "etape": "Étape",
+    "quand": "Quand ?",
+    "dateCalendrier": "Sur le calendrier"
+  },
+  "evenements": {
+    "bigBang": {
+      "titre": "Big Bang",
+      "quand": "il y a 13,8 milliards d’années"
+    },
+    "noyaux": {
+      "titre": "Premiers noyaux",
+      "quand": "3 minutes après le Big Bang"
+    },
+    "atomes": {
+      "titre": "Premiers atomes",
+      "quand": "380 000 ans après le Big Bang"
+    },
+    "etoiles": {
+      "titre": "Premières étoiles",
+      "quand": "il y a environ 13,6 milliards d’années"
+    },
+    "galaxies": {
+      "titre": "Premières galaxies",
+      "quand": "il y a environ 13,4 milliards d’années"
+    },
+    "soleil": {
+      "titre": "Soleil et Terre",
+      "quand": "il y a 4,6 milliards d’années"
+    },
+    "lune": {
+      "titre": "Lune",
+      "quand": "il y a environ 4,5 milliards d’années"
+    },
+    "vie": {
+      "titre": "Premières traces de vie",
+      "quand": "il y a au moins 3,5 milliards d’années"
+    },
+    "oxygene": {
+      "titre": "Grande Oxydation",
+      "quand": "il y a environ 2,4 milliards d’années"
+    },
+    "cambrien": {
+      "titre": "Explosion cambrienne",
+      "quand": "il y a environ 540 millions d’années"
+    },
+    "dinosaures": {
+      "titre": "Premiers dinosaures",
+      "quand": "il y a environ 230 millions d’années"
+    },
+    "asteroide": {
+      "titre": "Fin des dinosaures",
+      "quand": "il y a 66 millions d’années"
+    },
+    "hominines": {
+      "titre": "Premiers hominines",
+      "quand": "il y a environ 7 millions d’années"
+    },
+    "sapiens": {
+      "titre": "Homo sapiens",
+      "quand": "il y a environ 300 000 ans"
+    },
+    "agriculture": {
+      "titre": "Agriculture",
+      "quand": "il y a environ 12 000 ans"
+    },
+    "ecriture": {
+      "titre": "Écriture",
+      "quand": "il y a environ 5 300 ans"
+    },
+    "aujourdhui": {
+      "titre": "Aujourd’hui",
+      "quand": "maintenant"
+    }
+  }
+}

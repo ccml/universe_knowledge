@@ -1,0 +1,12 @@
+# Exemple pour le serveur, sur le modèle de site_music/srv_config/mypianotool.
+# Le reverse proxy (Nginx Proxy Manager) termine le TLS pour univers.ccmlits.net
+# et relaie vers ce conteneur.
+services:
+  connaissances-univers:
+    image: ccmlits/connaissances-univers:0.1.0
+    container_name: connaissances-univers
+    ports:
+      - "4001:4000"
+    environment:
+      - NODE_ENV=production
+    restart: always

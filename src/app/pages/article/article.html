@@ -1,0 +1,51 @@
+<article class="conteneur page">
+  <p class="retour">
+    <a [routerLink]="['/', domaineFiche().slug]">
+      <app-symbole [nom]="domaineFiche().symbole" />{{ domaineFiche().titre }}
+    </a>
+  </p>
+
+  <header class="entete">
+    <h1>{{ fiche().titre }}</h1>
+    <p class="chapo">{{ fiche().description }}</p>
+    <app-meta-article [article]="fiche()" />
+  </header>
+
+  @if (sommaire().length) {
+    <nav class="sommaire" aria-labelledby="titre-sommaire">
+      <p id="titre-sommaire" class="sommaire-titre">{{ 'article.sommaire' | translate }}</p>
+      <ol>
+        @for (s of sommaire(); track s.id) {
+          <li>
+            <a [routerLink]="[]" [fragment]="s.id">{{ s.titre }}</a>
+          </li>
+        }
+      </ol>
+    </nav>
+  }
+
+  @if (corps.hasValue()) {
+    <app-contenu-html [html]="corps.value().html" />
+  } @else if (corps.error()) {
+    <p class="erreur" role="alert">{{ 'article.erreur' | translate }}</p>
+  } @else {
+    <p class="chargement" aria-live="polite">{{ 'article.chargement' | translate }}</p>
+  }
+
+  @if (voisins().precedent || voisins().suivant) {
+    <nav class="voisins">
+      @if (voisins().precedent; as p) {
+        <a class="voisin precedent" [routerLink]="['/', p.domaine, p.slug]">
+          <span class="voisin-libelle">{{ 'article.precedent' | translate }}</span>
+          {{ p.titre }}
+        </a>
+      }
+      @if (voisins().suivant; as s) {
+        <a class="voisin suivant" [routerLink]="['/', s.domaine, s.slug]">
+          <span class="voisin-libelle">{{ 'article.suivant' | translate }}</span>
+          {{ s.titre }}
+        </a>
+      }
+    </nav>
+  }
+</article>

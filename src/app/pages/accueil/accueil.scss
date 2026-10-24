@@ -1,0 +1,97 @@
+.ouverture {
+  position: relative;
+  min-height: min(68vh, 34rem);
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid var(--trait);
+  background: radial-gradient(ellipse 70% 90% at 78% 40%, #1c3260 0%, transparent 70%);
+}
+
+.ouverture-texte {
+  position: relative;
+  padding-block: 6rem 3.5rem;
+}
+
+h1 {
+  max-width: 11ch;
+  margin: 0;
+  font-size: clamp(3rem, 9vw, 6.2rem);
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+}
+
+.accroche {
+  max-width: 34rem;
+  margin: 1.5rem 0 0;
+  color: var(--brume);
+  font-size: 1.2rem;
+}
+
+.index {
+  padding-block: 1rem 4rem;
+}
+
+.domaine {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  gap: 0.25rem 1.5rem;
+  padding-block: 2.25rem;
+  border-bottom: 1px solid var(--trait);
+
+  @media (min-width: 900px) {
+    grid-template-columns: 4rem minmax(0, 1.2fr) minmax(0, 1fr);
+    align-items: start;
+  }
+}
+
+.domaine-symbole {
+  font-size: 2.75rem;
+  margin-top: 0.2rem;
+}
+
+.domaine-texte {
+  h3 {
+    margin: 0 0 0.4rem;
+    font-size: clamp(1.9rem, 4vw, 2.5rem);
+
+    a {
+      color: var(--lumiere);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--or);
+      }
+    }
+  }
+
+  p {
+    margin: 0;
+    color: var(--brume);
+    max-width: 36rem;
+  }
+}
+
+.domaine-articles {
+  grid-column: 2;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: 900px) {
+    grid-column: 3;
+    margin-top: 0.5rem;
+  }
+
+  li {
+    padding: 0.35rem 0;
+  }
+
+  .vide {
+    color: var(--brume);
+    font-style: italic;
+  }
+}
+
+.vers-glossaire {
+  margin-top: 2.5rem;
+}

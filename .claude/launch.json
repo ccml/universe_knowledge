@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "ssr",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "serve:ssr"],
+      "port": 4000
+    },
+    {
+      "name": "dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["start"],
+      "port": 4200
+    }
+  ]
+}

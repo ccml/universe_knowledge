@@ -1,0 +1,59 @@
+.entete {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.entete-symbole {
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+}
+
+.intro {
+  font-size: 1.2rem;
+  color: var(--lumiere);
+}
+
+h2 {
+  margin-top: 3rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--trait);
+}
+
+.liste-articles {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding-block: 1.5rem;
+    border-bottom: 1px solid var(--trait);
+  }
+
+  h3 {
+    margin: 0 0 0.35rem;
+    font-size: 1.65rem;
+
+    a {
+      color: var(--lumiere);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--or);
+      }
+    }
+  }
+
+  p {
+    margin: 0 0 0.5rem;
+    max-width: 40rem;
+  }
+}
+
+.vide {
+  color: var(--brume);
+}
