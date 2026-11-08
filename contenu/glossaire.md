@@ -4,16 +4,24 @@ description: Les mots de l'astronomie, de la cosmologie et de l'histoire de la T
 termes:
   - terme: Année-lumière
     definition: Distance parcourue par la lumière dans le vide en une année, soit environ 9 460 milliards de kilomètres. Malgré son nom, c'est une distance et non une durée.
+  - terme: Aphélie
+    definition: Point de l'orbite d'une planète, ou d'un autre corps, où celui-ci est le plus éloigné du Soleil. La Terre y passe début juillet.
+  - terme: Biosignature
+    definition: Indice, comme une molécule, une texture ou un minéral, qui pourrait révéler une activité biologique passée ou présente. Une biosignature « possible » n'est pas une preuve de vie, car des processus sans vie peuvent parfois produire des traces semblables.
   - terme: Cyanobactérie
     definition: Bactérie capable de photosynthèse qui rejette de l'oxygène. Apparues il y a plus de 2,5 milliards d'années, les cyanobactéries sont à l'origine de l'oxygène de l'atmosphère terrestre.
   - terme: Disque protoplanétaire
     definition: Disque de gaz et de poussières qui tourne autour d'une jeune étoile, et dans lequel se forment les planètes.
+  - terme: Effet de serre
+    definition: Réchauffement d'une planète causé par certains gaz de son atmosphère, comme le dioxyde de carbone ou la vapeur d'eau, qui retiennent une partie de la chaleur qu'elle émet vers l'espace.
   - terme: Énergie sombre
     definition: Nom donné à la cause, encore inconnue, de l'accélération de l'expansion de l'univers. Elle représenterait environ 70 % de son contenu total.
   - terme: Étoile à neutrons
     definition: Reste ultra-dense du cœur d'une étoile massive après une supernova. Elle contient plus de matière que le Soleil dans une sphère d'une vingtaine de kilomètres de diamètre.
   - terme: Eucaryote
     definition: Être vivant dont les cellules possèdent un noyau. Les animaux, les plantes, les champignons et de nombreux êtres unicellulaires sont des eucaryotes.
+  - terme: Exosphère
+    definition: Couche la plus externe et la plus ténue de l'atmosphère d'un astre. Les atomes y sont si dispersés qu'ils ne se heurtent presque jamais. Mercure n'a pas d'autre atmosphère que celle-ci.
   - terme: Expansion de l'univers
     id: expansion
     definition: Augmentation, au fil du temps, des distances entre les galaxies éloignées. Ce ne sont pas les galaxies qui se déplacent dans l'espace, c'est l'espace lui-même qui s'étire.
@@ -21,12 +29,18 @@ termes:
     definition: Réaction au cours de laquelle des noyaux d'atomes légers s'assemblent pour former un noyau plus lourd, en libérant beaucoup d'énergie. C'est elle qui fait briller les étoiles.
   - terme: Galaxie
     definition: Immense ensemble d'étoiles, de gaz, de poussières et de matière noire, lié par la gravité. La nôtre, la Voie lactée, compte entre 100 et 400 milliards d'étoiles.
+  - terme: Géante de glace
+    definition: Planète géante, comme Uranus ou Neptune, dont l'intérieur est surtout fait de fluides chauds et denses riches en eau, en ammoniac et en méthane, appelés « glaces » par les astronomes. Elle contient bien moins d'hydrogène et d'hélium qu'une géante gazeuse.
+  - terme: Géante gazeuse
+    definition: Planète géante, comme Jupiter ou Saturne, faite surtout d'hydrogène et d'hélium. Elle n'a pas de surface solide, le gaz devenant progressivement fluide avec la profondeur.
   - terme: Géante rouge
     definition: Étoile en fin de vie qui a énormément gonflé. Sa surface, plus froide, lui donne une teinte orangée ou rougeâtre. Le Soleil deviendra une géante rouge dans environ 5 milliards d'années.
   - terme: Halo de matière noire
     definition: Vaste concentration de matière noire, à peu près sphérique, dans laquelle les galaxies se forment et restent plongées.
   - terme: Hominine
     definition: Membre de la lignée humaine, apparue après la séparation d'avec celle des chimpanzés il y a environ 7 millions d'années. Les australopithèques, les différentes espèces du genre Homo… et nous sommes des hominines.
+  - terme: Hydrogène métallique
+    definition: État de l'hydrogène soumis à une pression extrême, comme au cœur de Jupiter et de Saturne. Ses électrons y circulent librement, de sorte qu'il conduit l'électricité comme un métal.
   - terme: Inflation cosmique
     id: inflation
     definition: Phase d'expansion extrêmement rapide que l'univers aurait connue dans sa toute première fraction de seconde. Largement acceptée par les cosmologistes, elle n'est pas encore confirmée directement.
@@ -38,6 +52,12 @@ termes:
     definition: Nuage de gaz et de poussières dans l'espace. Certaines nébuleuses sont de véritables pouponnières où naissent de nouvelles étoiles.
   - terme: Nucléosynthèse primordiale
     definition: Fabrication des premiers noyaux atomiques (surtout de l'hélium, avec des traces de deutérium et de lithium) dans les premières minutes qui ont suivi le Big Bang.
+  - terme: Obliquité
+    definition: Inclinaison de l'axe de rotation d'une planète par rapport à la perpendiculaire au plan de son orbite. Elle vaut 23,4° pour la Terre, ce qui explique les saisons, et environ 98° pour Uranus.
+  - terme: Opposition
+    definition: Moment où une planète plus éloignée du Soleil que la Terre se trouve à l'opposé du Soleil dans notre ciel, la Terre passant entre les deux. La planète est alors visible toute la nuit.
+  - terme: Périhélie
+    definition: Point de l'orbite d'une planète, ou d'un autre corps, où celui-ci est le plus proche du Soleil. La Terre y passe début janvier.
   - terme: Planétésimal
     definition: Petit corps rocheux ou glacé, de quelques kilomètres à quelques centaines de kilomètres, formé dans un disque protoplanétaire. Les planétésimaux sont les briques des planètes.
   - terme: Rayonnement fossile

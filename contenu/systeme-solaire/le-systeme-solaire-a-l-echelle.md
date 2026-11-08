@@ -2,7 +2,7 @@
 titre: Le système solaire à l'échelle
 description: Si le Soleil était un ballon de football, où seraient les planètes ? Un voyage pour prendre la mesure de notre système solaire.
 niveau: decouverte
-mise_a_jour: 2026-10-24
+mise_a_jour: 2026-11-08
 mots_cles: [Soleil, planètes, distances, échelle, unité astronomique]
 ordre: 1
 ---
@@ -15,7 +15,7 @@ Pour s'en rendre compte, il faut tout réduire à la même échelle.
 
 Commençons par les tailles. Le Soleil mesure environ 1,39 million de kilomètres de diamètre, soit à peu près **109 fois** celui de la Terre. Il concentre à lui seul plus de 99,8 % de la masse de tout le système solaire : les planètes ne sont que des miettes autour de lui.
 
-Parmi les planètes, l'écart est déjà spectaculaire. Jupiter, la plus grosse, est environ 11 fois plus large que la Terre. Mercure, la plus petite, est à peine plus grande que notre Lune.
+Parmi les planètes, l'écart est déjà spectaculaire. Jupiter, la plus grosse, est environ 11 fois plus large que la Terre. Mercure, la plus petite, est environ 1,4 fois plus large que notre Lune.
 
 Comparez-les vous-même :
 
@@ -43,7 +43,7 @@ Avec elle, tout devient plus lisible : Jupiter est à environ 5,2 ua du Soleil, 
 
 ## Pourquoi les images nous trompent
 
-Dessiner le système solaire à la bonne échelle sur une page est impossible : si le Soleil y faisait la taille d'une pièce de monnaie, Neptune serait à plusieurs dizaines de mètres de la feuille, et la Terre serait un point invisible. Les illustrations rapprochent donc les planètes et les grossissent. Ce n'est pas un mensonge, juste une simplification, mais il est bon de savoir qu'elle existe.
+Dessiner le système solaire à la bonne échelle sur une page est impossible : si le Soleil y faisait la taille d'une pièce de monnaie, Neptune serait à plusieurs dizaines de mètres de la feuille, et la Terre serait un point à peine visible. Les illustrations rapprochent donc les planètes et les grossissent. Ce n'est pas un mensonge, juste une simplification, mais il est bon de savoir qu'elle existe.
 
 :::a-retenir
 - Le Soleil est environ 109 fois plus large que la Terre et contient plus de 99,8 % de la masse du système solaire.
@@ -51,3 +51,7 @@ Dessiner le système solaire à la bonne échelle sur une page est impossible : 
 - L'unité astronomique (ua), environ 150 millions de km, est la distance moyenne Terre–Soleil.
 - Les illustrations habituelles rapprochent et grossissent les planètes pour qu'elles tiennent sur une page.
 :::
+
+## Pour aller plus loin
+
+Partez à la découverte de chaque planète, du Soleil vers l'extérieur : [Mercure](/systeme-solaire/mercure), [Vénus](/systeme-solaire/venus), [la Terre](/systeme-solaire/la-terre), [Mars](/systeme-solaire/mars), [Jupiter](/systeme-solaire/jupiter), [Saturne](/systeme-solaire/saturne), [Uranus](/systeme-solaire/uranus) et [Neptune](/systeme-solaire/neptune).
