@@ -10,6 +10,9 @@ termes:
     definition: Indice, comme une molécule, une texture ou un minéral, qui pourrait révéler une activité biologique passée ou présente. Une biosignature « possible » n'est pas une preuve de vie, car des processus sans vie peuvent parfois produire des traces semblables.
   - terme: Cyanobactérie
     definition: Bactérie capable de photosynthèse qui rejette de l'oxygène. Apparues il y a plus de 2,5 milliards d'années, les cyanobactéries sont à l'origine de l'oxygène de l'atmosphère terrestre.
+  - terme: Disque d'accrétion
+    id: disque-accretion
+    definition: Disque de gaz et de poussières qui tourne autour d'un astre, comme un trou noir, et tombe peu à peu vers lui. Échauffé par les frottements, il peut briller intensément.
   - terme: Disque protoplanétaire
     definition: Disque de gaz et de poussières qui tourne autour d'une jeune étoile, et dans lequel se forment les planètes.
   - terme: Effet de serre
@@ -39,6 +42,8 @@ termes:
     definition: Vaste concentration de matière noire, à peu près sphérique, dans laquelle les galaxies se forment et restent plongées.
   - terme: Hominine
     definition: Membre de la lignée humaine, apparue après la séparation d'avec celle des chimpanzés il y a environ 7 millions d'années. Les australopithèques, les différentes espèces du genre Homo… et nous sommes des hominines.
+  - terme: Horizon des événements
+    definition: Frontière d'un trou noir au-delà de laquelle rien, pas même la lumière, ne peut ressortir. Ce n'est pas une surface matérielle, mais une limite de non-retour.
   - terme: Hydrogène métallique
     definition: État de l'hydrogène soumis à une pression extrême, comme au cœur de Jupiter et de Saturne. Ses électrons y circulent librement, de sorte qu'il conduit l'électricité comme un métal.
   - terme: Inflation cosmique
@@ -54,18 +59,28 @@ termes:
     definition: Fabrication des premiers noyaux atomiques (surtout de l'hélium, avec des traces de deutérium et de lithium) dans les premières minutes qui ont suivi le Big Bang.
   - terme: Obliquité
     definition: Inclinaison de l'axe de rotation d'une planète par rapport à la perpendiculaire au plan de son orbite. Elle vaut 23,4° pour la Terre, ce qui explique les saisons, et environ 98° pour Uranus.
+  - terme: Onde gravitationnelle
+    definition: Minuscule vibration de l'espace lui-même, qui se propage à la vitesse de la lumière. Elle est produite notamment par la fusion de deux trous noirs. Détectée pour la première fois en 2015.
   - terme: Opposition
     definition: Moment où une planète plus éloignée du Soleil que la Terre se trouve à l'opposé du Soleil dans notre ciel, la Terre passant entre les deux. La planète est alors visible toute la nuit.
   - terme: Périhélie
     definition: Point de l'orbite d'une planète, ou d'un autre corps, où celui-ci est le plus proche du Soleil. La Terre y passe début janvier.
   - terme: Planétésimal
     definition: Petit corps rocheux ou glacé, de quelques kilomètres à quelques centaines de kilomètres, formé dans un disque protoplanétaire. Les planétésimaux sont les briques des planètes.
+  - terme: Quasar
+    definition: Centre extrêmement lumineux d'une galaxie lointaine, alimenté par un trou noir supermassif qui avale de grandes quantités de gaz. Un quasar peut briller davantage que toute sa galaxie.
+  - terme: Rayonnement de Hawking
+    definition: Très faible rayonnement que les trous noirs devraient émettre, selon une prédiction théorique de Stephen Hawking en 1974. Il n'a encore jamais été observé.
   - terme: Rayonnement fossile
     definition: Plus ancienne lumière de l'univers, émise environ 380 000 ans après le Big Bang. Elle nous parvient aujourd'hui de toutes les directions, sous forme de micro-ondes très froides (environ −270 °C). On l'appelle aussi fond diffus cosmologique.
   - terme: Réionisation
     definition: Période, achevée environ un milliard d'années après le Big Bang, pendant laquelle le rayonnement des premières étoiles et galaxies a de nouveau arraché leurs électrons aux atomes d'hydrogène du gaz situé entre les galaxies.
+  - terme: Relativité générale
+    definition: Théorie de la gravitation publiée par Albert Einstein en 1915. Elle décrit la gravité comme une courbure de l'espace et du temps causée par la matière et l'énergie.
   - terme: Séquence principale
     definition: Longue période de la vie d'une étoile pendant laquelle elle fusionne l'hydrogène de son cœur. C'est la phase la plus stable et la plus longue ; le Soleil s'y trouve depuis environ 4,6 milliards d'années.
+  - terme: Singularité
+    definition: Point au centre d'un trou noir où, selon la relativité générale, la densité deviendrait infinie. La plupart des physiciens y voient une limite de la théorie plutôt qu'un objet réel.
   - terme: Supernova
     definition: Explosion qui marque la fin de certaines étoiles, notamment les plus massives. Pendant quelques semaines, une supernova peut briller autant qu'une galaxie entière.
   - terme: Toile cosmique

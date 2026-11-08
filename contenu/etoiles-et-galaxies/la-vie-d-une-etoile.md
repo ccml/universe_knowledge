@@ -2,7 +2,7 @@
 titre: La vie d'une étoile
 description: De la naissance dans un nuage de gaz à la fin en naine blanche, en supernova ou en trou noir, voici comment vit une étoile.
 niveau: decouverte
-mise_a_jour: 2026-10-24
+mise_a_jour: 2026-11-08
 mots_cles: [étoile, fusion nucléaire, Soleil, supernova, naine blanche, trou noir]
 ordre: 1
 ---
@@ -41,7 +41,7 @@ Puis l'étoile expulse doucement ses couches extérieures dans l'espace. Il ne r
 
 Au-delà d'environ 8 fois la masse du Soleil, la fin est beaucoup plus violente. L'étoile fabrique dans son cœur des éléments de plus en plus lourds, jusqu'au fer. Mais fusionner du fer ne libère plus d'énergie : le cœur s'effondre brutalement sur lui-même, et l'étoile explose en :terme[supernova]. Pendant quelques semaines, elle peut briller autant qu'une galaxie entière.
 
-Ce qui reste du cœur devient une :terme[étoile à neutrons]{#etoile-a-neutrons}, un objet incroyablement dense, ou, pour les étoiles les plus massives, un :terme[trou noir]{#trou-noir}.
+Ce qui reste du cœur devient une :terme[étoile à neutrons]{#etoile-a-neutrons}, un objet incroyablement dense, ou, pour les étoiles les plus massives, un :terme[trou noir]{#trou-noir}, auquel nous consacrons [un article](/etoiles-et-galaxies/les-trous-noirs).
 
 ## Nous sommes faits de poussières d'étoiles
 

@@ -2,7 +2,7 @@
 titre: Comment sont nées les galaxies ?
 description: Des petites galaxies irrégulières aux grandes spirales comme la Voie lactée, les galaxies se sont construites peu à peu, en avalant du gaz et en fusionnant entre elles.
 niveau: decouverte
-mise_a_jour: 2026-10-24
+mise_a_jour: 2026-11-08
 mots_cles: [galaxies, toile cosmique, matière noire, Voie lactée, Andromède, James Webb, Gaia]
 ordre: 3
 ---
@@ -42,7 +42,7 @@ Les galaxies n'ont pas toutes la même forme, et leur histoire l'explique en gra
 Sans frein, les galaxies auraient transformé tout leur gaz en étoiles bien trop vite. Deux mécanismes les régulent :
 
 - les **supernovae**, qui chauffent et soufflent le gaz, surtout dans les petites galaxies ;
-- les **trous noirs supermassifs** au cœur des galaxies. Quand ils avalent de la matière, ils libèrent assez d'énergie pour chasser le gaz et stopper la formation d'étoiles. Une galaxie et son trou noir central grandissent ensemble.
+- les **[trous noirs](/etoiles-et-galaxies/les-trous-noirs) supermassifs** au cœur des galaxies. Quand ils avalent de la matière, ils libèrent assez d'énergie pour chasser le gaz et stopper la formation d'étoiles. Une galaxie et son trou noir central grandissent ensemble.
 
 ## Une surprise du télescope James Webb
 

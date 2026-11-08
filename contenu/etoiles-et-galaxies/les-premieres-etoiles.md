@@ -2,7 +2,7 @@
 titre: Les premières étoiles, géantes et éphémères
 description: Une centaine de millions d'années après le Big Bang, les premières étoiles s'allument. Bien plus massives que le Soleil, elles ont forgé les premiers éléments lourds.
 niveau: decouverte
-mise_a_jour: 2026-10-24
+mise_a_jour: 2026-11-08
 mots_cles: [premières étoiles, population III, âges sombres, réionisation, James Webb, matière noire]
 ordre: 2
 ---
@@ -51,7 +51,7 @@ Malgré leur courte vie, ces étoiles ont transformé l'univers :
 - **Les premiers éléments lourds.** Le carbone, l'oxygène ou le fer, fabriqués dans leur cœur, ont été dispersés par leurs explosions. Les étoiles et les planètes suivantes en ont hérité.
 - **Des étoiles plus petites ensuite.** Grâce à ces éléments, le gaz se refroidit mieux. Les générations suivantes ont pu former des étoiles plus petites et plus durables, comme le Soleil.
 - **La :terme[réionisation].** Leur intense ultraviolet a de nouveau arraché les électrons des atomes d'hydrogène dans le gaz qui sépare les galaxies. Ce grand changement s'est achevé environ un milliard d'années après le Big Bang.
-- **Des trous noirs.** Certaines ont laissé des :terme[trous noirs]{#trou-noir}, peut-être les graines des trous noirs géants qui occupent aujourd'hui le cœur des galaxies.
+- **Des trous noirs.** Certaines ont laissé des :terme[trous noirs]{#trou-noir}, peut-être les graines des [trous noirs géants](/etoiles-et-galaxies/les-trous-noirs) qui occupent aujourd'hui le cœur des galaxies.
 
 ## Une énigme encore ouverte
 
